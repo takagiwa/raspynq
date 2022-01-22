@@ -1,0 +1,639 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LibraryLoader:PCF8574PWR IC?
+U 1 1 60B3DF7B
+P 3350 1300
+F 0 "IC?" H 3900 1565 50  0000 C CNN
+F 1 "PCF8574PWR" H 3900 1474 50  0000 C CNN
+F 2 "SOP65P640X120-20N" H 4300 1400 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/pcf8574.pdf" H 4300 1300 50  0001 L CNN
+F 4 "Remote I/O Expander 20-Pin TSSOP Texas Instruments PCF8574PWR I/O Expander, 20-Pin TSSOP" H 4300 1200 50  0001 L CNN "Description"
+F 5 "1.2" H 4300 1100 50  0001 L CNN "Height"
+F 6 "595-PCF8574PWR" H 4300 1000 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/PCF8574PWR/?qs=X1HXWTtiZ0T3gnyuO%2Fq4CA%3D%3D" H 4300 900 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Texas Instruments" H 4300 800 50  0001 L CNN "Manufacturer_Name"
+F 9 "PCF8574PWR" H 4300 700 50  0001 L CNN "Manufacturer_Part_Number"
+	1    3350 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L LibraryLoader:SN74AXC4T774PWR IC?
+U 1 1 60B5C0C6
+P 5950 3850
+F 0 "IC?" H 6500 4115 50  0000 C CNN
+F 1 "SN74AXC4T774PWR" H 6500 4024 50  0000 C CNN
+F 2 "SOP65P640X120-16N" H 6900 3950 50  0001 L CNN
+F 3 "http://www.ti.com/lit/gpn/SN74AXC4T774" H 6900 3850 50  0001 L CNN
+F 4 "4-bit dual-supply bus transceiver with 3-state outputs and independent direction control inputs" H 6900 3750 50  0001 L CNN "Description"
+F 5 "1.2" H 6900 3650 50  0001 L CNN "Height"
+F 6 "595-SN74AXC4T774PWR" H 6900 3550 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/SN74AXC4T774PWR?qs=%252B6g0mu59x7Jg9HxWxHF9JA%3D%3D" H 6900 3450 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Texas Instruments" H 6900 3350 50  0001 L CNN "Manufacturer_Name"
+F 9 "SN74AXC4T774PWR" H 6900 3250 50  0001 L CNN "Manufacturer_Part_Number"
+	1    5950 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L LibraryLoader:SN74AXC4T774PWR IC?
+U 1 1 60B5C8CD
+P 5950 5050
+F 0 "IC?" H 6500 5315 50  0000 C CNN
+F 1 "SN74AXC4T774PWR" H 6500 5224 50  0000 C CNN
+F 2 "SOP65P640X120-16N" H 6900 5150 50  0001 L CNN
+F 3 "http://www.ti.com/lit/gpn/SN74AXC4T774" H 6900 5050 50  0001 L CNN
+F 4 "4-bit dual-supply bus transceiver with 3-state outputs and independent direction control inputs" H 6900 4950 50  0001 L CNN "Description"
+F 5 "1.2" H 6900 4850 50  0001 L CNN "Height"
+F 6 "595-SN74AXC4T774PWR" H 6900 4750 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/SN74AXC4T774PWR?qs=%252B6g0mu59x7Jg9HxWxHF9JA%3D%3D" H 6900 4650 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Texas Instruments" H 6900 4550 50  0001 L CNN "Manufacturer_Name"
+F 9 "SN74AXC4T774PWR" H 6900 4450 50  0001 L CNN "Manufacturer_Part_Number"
+	1    5950 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x06_Odd_Even J?
+U 1 1 60B5D5B2
+P 9250 2200
+F 0 "J?" H 9300 2617 50  0000 C CNN
+F 1 "Conn_02x06_Odd_Even" H 9300 2526 50  0000 C CNN
+F 2 "" H 9250 2200 50  0001 C CNN
+F 3 "~" H 9250 2200 50  0001 C CNN
+	1    9250 2200
+	1    0    0    -1  
+$EndComp
+Text Notes 9100 1650 0    50   ~ 0
+87606-306LF
+Wire Wire Line
+	3350 1400 2200 1400
+Wire Wire Line
+	3350 1600 2200 1600
+NoConn ~ 3350 1500
+NoConn ~ 3350 2000
+NoConn ~ 4450 2000
+NoConn ~ 4450 1500
+$Comp
+L Device:R R?
+U 1 1 608DB259
+P 3250 1050
+F 0 "R?" H 3320 1096 50  0000 L CNN
+F 1 "R" H 3320 1005 50  0000 L CNN
+F 2 "" V 3180 1050 50  0001 C CNN
+F 3 "~" H 3250 1050 50  0001 C CNN
+	1    3250 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 608DBA1F
+P 3150 800
+F 0 "#PWR?" H 3150 650 50  0001 C CNN
+F 1 "+3.3V" H 3165 973 50  0000 C CNN
+F 2 "" H 3150 800 50  0001 C CNN
+F 3 "" H 3150 800 50  0001 C CNN
+	1    3150 800 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 800  3150 850 
+Wire Wire Line
+	3150 1700 3350 1700
+Wire Wire Line
+	3350 1300 3250 1300
+Wire Wire Line
+	3250 1300 3250 1200
+Wire Wire Line
+	3250 900  3250 850 
+Wire Wire Line
+	3250 850  3150 850 
+Connection ~ 3150 850 
+Wire Wire Line
+	3150 850  3150 1700
+$Comp
+L Device:R R?
+U 1 1 608DC250
+P 2900 1050
+F 0 "R?" H 2970 1096 50  0000 L CNN
+F 1 "R" H 2970 1005 50  0000 L CNN
+F 2 "" V 2830 1050 50  0001 C CNN
+F 3 "~" H 2900 1050 50  0001 C CNN
+	1    2900 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 608DC330
+P 2650 1050
+F 0 "R?" H 2720 1096 50  0000 L CNN
+F 1 "R" H 2720 1005 50  0000 L CNN
+F 2 "" V 2580 1050 50  0001 C CNN
+F 3 "~" H 2650 1050 50  0001 C CNN
+	1    2650 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 608DC3E7
+P 2400 1050
+F 0 "R?" H 2470 1096 50  0000 L CNN
+F 1 "R" H 2470 1005 50  0000 L CNN
+F 2 "" V 2330 1050 50  0001 C CNN
+F 3 "~" H 2400 1050 50  0001 C CNN
+	1    2400 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 608DC49E
+P 2400 2450
+F 0 "R?" H 2470 2496 50  0000 L CNN
+F 1 "R" H 2470 2405 50  0000 L CNN
+F 2 "" V 2330 2450 50  0001 C CNN
+F 3 "~" H 2400 2450 50  0001 C CNN
+	1    2400 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 608DC7BB
+P 2650 2450
+F 0 "R?" H 2720 2496 50  0000 L CNN
+F 1 "R" H 2720 2405 50  0000 L CNN
+F 2 "" V 2580 2450 50  0001 C CNN
+F 3 "~" H 2650 2450 50  0001 C CNN
+	1    2650 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 608DC872
+P 2900 2450
+F 0 "R?" H 2970 2496 50  0000 L CNN
+F 1 "R" H 2970 2405 50  0000 L CNN
+F 2 "" V 2830 2450 50  0001 C CNN
+F 3 "~" H 2900 2450 50  0001 C CNN
+	1    2900 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 608DC929
+P 2400 800
+F 0 "#PWR?" H 2400 650 50  0001 C CNN
+F 1 "+3.3V" H 2415 973 50  0000 C CNN
+F 2 "" H 2400 800 50  0001 C CNN
+F 3 "" H 2400 800 50  0001 C CNN
+	1    2400 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 608DCC10
+P 2400 2700
+F 0 "#PWR?" H 2400 2450 50  0001 C CNN
+F 1 "GND" H 2405 2527 50  0000 C CNN
+F 2 "" H 2400 2700 50  0001 C CNN
+F 3 "" H 2400 2700 50  0001 C CNN
+	1    2400 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 800  2400 850 
+Wire Wire Line
+	2650 900  2650 850 
+Wire Wire Line
+	2650 850  2400 850 
+Connection ~ 2400 850 
+Wire Wire Line
+	2400 850  2400 900 
+Wire Wire Line
+	2900 900  2900 850 
+Wire Wire Line
+	2900 850  2650 850 
+Connection ~ 2650 850 
+Wire Wire Line
+	2400 1200 2400 1800
+Wire Wire Line
+	2400 2600 2400 2650
+Wire Wire Line
+	2650 2600 2650 2650
+Wire Wire Line
+	2650 2650 2400 2650
+Connection ~ 2400 2650
+Wire Wire Line
+	2400 2650 2400 2700
+Wire Wire Line
+	2900 2600 2900 2650
+Wire Wire Line
+	2900 2650 2650 2650
+Connection ~ 2650 2650
+Wire Wire Line
+	2650 2300 2650 1900
+Wire Wire Line
+	2900 1200 2900 2100
+Wire Wire Line
+	3350 2100 2900 2100
+Connection ~ 2900 2100
+Wire Wire Line
+	2900 2100 2900 2300
+Wire Wire Line
+	3350 1900 2650 1900
+Connection ~ 2650 1900
+Wire Wire Line
+	2650 1900 2650 1200
+Wire Wire Line
+	3350 1800 2400 1800
+Connection ~ 2400 1800
+Wire Wire Line
+	2400 1800 2400 2300
+$Comp
+L power:GND #PWR?
+U 1 1 608DF91C
+P 4550 2300
+F 0 "#PWR?" H 4550 2050 50  0001 C CNN
+F 1 "GND" H 4555 2127 50  0000 C CNN
+F 2 "" H 4550 2300 50  0001 C CNN
+F 3 "" H 4550 2300 50  0001 C CNN
+	1    4550 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 1800 4550 1800
+Wire Wire Line
+	4550 1800 4550 2300
+Wire Wire Line
+	3350 2200 3250 2200
+Wire Wire Line
+	3250 2200 3250 3850
+Wire Wire Line
+	3250 3850 5950 3850
+Wire Wire Line
+	4450 2200 4750 2200
+Wire Wire Line
+	4750 2200 4750 3950
+Wire Wire Line
+	4750 3950 5950 3950
+Wire Wire Line
+	4450 2100 4850 2100
+Wire Wire Line
+	4850 2100 4850 4450
+Wire Wire Line
+	4850 4450 5950 4450
+Wire Wire Line
+	5950 4550 4950 4550
+Wire Wire Line
+	4950 4550 4950 1900
+Wire Wire Line
+	4950 1900 4450 1900
+Wire Wire Line
+	4450 1700 5050 1700
+Wire Wire Line
+	5050 1700 5050 5050
+Wire Wire Line
+	5050 5050 5950 5050
+Wire Wire Line
+	5950 5150 5150 5150
+Wire Wire Line
+	5150 5150 5150 1600
+Wire Wire Line
+	5150 1600 4450 1600
+Wire Wire Line
+	4450 1400 5250 1400
+Wire Wire Line
+	5250 1400 5250 5650
+Wire Wire Line
+	5250 5650 5950 5650
+Wire Wire Line
+	5950 5750 5350 5750
+Wire Wire Line
+	5350 5750 5350 1300
+Wire Wire Line
+	5350 1300 4450 1300
+Wire Wire Line
+	5950 4050 2200 4050
+Wire Wire Line
+	5950 4150 2200 4150
+Wire Wire Line
+	5950 4250 2200 4250
+Wire Wire Line
+	5950 4350 2200 4350
+Wire Wire Line
+	5950 5250 2200 5250
+Wire Wire Line
+	5950 5350 2200 5350
+Wire Wire Line
+	5950 5450 2200 5450
+Wire Wire Line
+	5950 5550 2200 5550
+$Comp
+L power:+3.3V #PWR?
+U 1 1 608EE489
+P 7250 3750
+F 0 "#PWR?" H 7250 3600 50  0001 C CNN
+F 1 "+3.3V" H 7265 3923 50  0000 C CNN
+F 2 "" H 7250 3750 50  0001 C CNN
+F 3 "" H 7250 3750 50  0001 C CNN
+	1    7250 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 608EE83C
+P 9850 1900
+F 0 "#PWR?" H 9850 1750 50  0001 C CNN
+F 1 "+3.3V" H 9865 2073 50  0000 C CNN
+F 2 "" H 9850 1900 50  0001 C CNN
+F 3 "" H 9850 1900 50  0001 C CNN
+	1    9850 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9550 2500 9850 2500
+Wire Wire Line
+	9850 2500 9850 1900
+$Comp
+L power:GND #PWR?
+U 1 1 608F06A0
+P 9650 2600
+F 0 "#PWR?" H 9650 2350 50  0001 C CNN
+F 1 "GND" H 9655 2427 50  0000 C CNN
+F 2 "" H 9650 2600 50  0001 C CNN
+F 3 "" H 9650 2600 50  0001 C CNN
+	1    9650 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 608F0A6C
+P 8950 2600
+F 0 "#PWR?" H 8950 2350 50  0001 C CNN
+F 1 "GND" H 8955 2427 50  0000 C CNN
+F 2 "" H 8950 2600 50  0001 C CNN
+F 3 "" H 8950 2600 50  0001 C CNN
+	1    8950 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9550 2400 9650 2400
+Wire Wire Line
+	9650 2400 9650 2600
+Wire Wire Line
+	9050 2400 8950 2400
+Wire Wire Line
+	8950 2400 8950 2600
+$Comp
+L power:GND #PWR?
+U 1 1 608F8BFC
+P 7150 5850
+F 0 "#PWR?" H 7150 5600 50  0001 C CNN
+F 1 "GND" H 7155 5677 50  0000 C CNN
+F 2 "" H 7150 5850 50  0001 C CNN
+F 3 "" H 7150 5850 50  0001 C CNN
+	1    7150 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 4450 7150 4450
+Wire Wire Line
+	7150 4450 7150 5650
+Wire Wire Line
+	7050 5650 7150 5650
+Connection ~ 7150 5650
+Wire Wire Line
+	7150 5650 7150 5850
+Wire Wire Line
+	7050 5150 7250 5150
+Wire Wire Line
+	7250 5150 7250 5050
+Wire Wire Line
+	7050 3850 7250 3850
+Connection ~ 7250 3850
+Wire Wire Line
+	7250 3850 7250 3750
+Wire Wire Line
+	7050 3950 7250 3950
+Connection ~ 7250 3950
+Wire Wire Line
+	7250 3950 7250 3850
+Wire Wire Line
+	7050 5050 7250 5050
+Connection ~ 7250 5050
+Wire Wire Line
+	7250 5050 7250 3950
+Wire Wire Line
+	7050 4550 7350 4550
+Wire Wire Line
+	7350 4550 7350 5750
+Wire Wire Line
+	2200 6150 7350 6150
+Wire Wire Line
+	7050 5750 7350 5750
+Connection ~ 7350 5750
+Wire Wire Line
+	7350 5750 7350 6150
+Wire Wire Line
+	7050 4050 7500 4050
+Wire Wire Line
+	7500 4050 7500 2000
+Wire Wire Line
+	7500 2000 9050 2000
+Wire Wire Line
+	7050 4150 7600 4150
+Wire Wire Line
+	7600 4150 7600 2100
+Wire Wire Line
+	7600 2100 9050 2100
+Wire Wire Line
+	7050 4250 7700 4250
+Wire Wire Line
+	7700 4250 7700 2200
+Wire Wire Line
+	7700 2200 9050 2200
+Wire Wire Line
+	9050 2300 7800 2300
+Wire Wire Line
+	7800 2300 7800 4350
+Wire Wire Line
+	7800 4350 7050 4350
+Wire Wire Line
+	7050 5250 9950 5250
+Wire Wire Line
+	9950 5250 9950 2000
+Wire Wire Line
+	9950 2000 9550 2000
+Wire Wire Line
+	9550 2100 10050 2100
+Wire Wire Line
+	10050 2100 10050 5350
+Wire Wire Line
+	10050 5350 7050 5350
+Wire Wire Line
+	7050 5450 10150 5450
+Wire Wire Line
+	10150 5450 10150 2200
+Wire Wire Line
+	10150 2200 9550 2200
+Wire Wire Line
+	9550 2300 10250 2300
+Wire Wire Line
+	10250 2300 10250 5550
+Wire Wire Line
+	10250 5550 7050 5550
+Text HLabel 2200 1400 0    50   Input ~ 0
+SCL
+Text HLabel 2200 1600 0    50   Input ~ 0
+SDA
+Text HLabel 2200 4050 0    50   BiDi ~ 0
+GPIO0
+Text HLabel 2200 4150 0    50   BiDi ~ 0
+GPIO1
+Text HLabel 2200 4250 0    50   BiDi ~ 0
+GPIO2
+Text HLabel 2200 4350 0    50   BiDi ~ 0
+GPIO3
+Text HLabel 2200 5250 0    50   BiDi ~ 0
+GPIO4
+Text HLabel 2200 5350 0    50   BiDi ~ 0
+GPIO5
+Text HLabel 2200 5450 0    50   BiDi ~ 0
+GPIO6
+Text HLabel 2200 5550 0    50   BiDi ~ 0
+GPIO7
+Text HLabel 2200 6150 0    50   Input ~ 0
+GPIO_OE
+$Comp
+L LibraryLoader:SN74LV1T125DBVR IC?
+U 1 1 6093C4EF
+P 7650 1050
+F 0 "IC?" H 8150 1315 50  0000 C CNN
+F 1 "SN74LV1T125DBVR" H 8150 1224 50  0000 C CNN
+F 2 "SOT95P280X145-5N" H 8500 1150 50  0001 L CNN
+F 3 "http://www.ti.com/general/docs/lit/getliterature.tsp?genericPartNumber=SN74LV1T125&&fileType=pdf" H 8500 1050 50  0001 L CNN
+F 4 "Single Power Supply, Single BUFFER GATE w/ 3-State Output (active low enable)" H 8500 950 50  0001 L CNN "Description"
+F 5 "1.45" H 8500 850 50  0001 L CNN "Height"
+F 6 "595-SN74LV1T125DBVR" H 8500 750 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/SN74LV1T125DBVR?qs=8sOby8ZxZLHg5BJUGPaBYA%3D%3D" H 8500 650 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Texas Instruments" H 8500 550 50  0001 L CNN "Manufacturer_Name"
+F 9 "SN74LV1T125DBVR" H 8500 450 50  0001 L CNN "Manufacturer_Part_Number"
+	1    7650 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 6093C4F5
+P 8750 950
+F 0 "#PWR?" H 8750 800 50  0001 C CNN
+F 1 "+3.3V" H 8765 1123 50  0000 C CNN
+F 2 "" H 8750 950 50  0001 C CNN
+F 3 "" H 8750 950 50  0001 C CNN
+	1    8750 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 1150 8750 1150
+Wire Wire Line
+	8750 1150 8750 950 
+Wire Wire Line
+	8650 1050 8850 1050
+Wire Wire Line
+	8850 1050 8850 1450
+Wire Wire Line
+	7650 1250 7500 1250
+Wire Wire Line
+	7650 1050 7500 1050
+Wire Wire Line
+	7500 1050 7500 1250
+Wire Wire Line
+	7400 1150 7400 650 
+Wire Wire Line
+	7400 1150 7650 1150
+Wire Wire Line
+	7400 650  9000 650 
+Text HLabel 6050 1450 0    50   Output ~ 0
+VREF_SENSE
+Wire Wire Line
+	6050 1450 6900 1450
+$Comp
+L Device:R R?
+U 1 1 6093C50B
+P 6650 1000
+F 0 "R?" V 6443 1000 50  0000 C CNN
+F 1 "R" V 6534 1000 50  0000 C CNN
+F 2 "" V 6580 1000 50  0001 C CNN
+F 3 "~" H 6650 1000 50  0001 C CNN
+	1    6650 1000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 6093C511
+P 6250 1000
+F 0 "D?" H 6243 1217 50  0000 C CNN
+F 1 "LED" H 6243 1126 50  0000 C CNN
+F 2 "" H 6250 1000 50  0001 C CNN
+F 3 "~" H 6250 1000 50  0001 C CNN
+	1    6250 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6093C517
+P 5950 1100
+F 0 "#PWR?" H 5950 850 50  0001 C CNN
+F 1 "GND" H 5955 927 50  0000 C CNN
+F 2 "" H 5950 1100 50  0001 C CNN
+F 3 "" H 5950 1100 50  0001 C CNN
+	1    5950 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 1000 5950 1000
+Wire Wire Line
+	5950 1000 5950 1100
+Wire Wire Line
+	6400 1000 6500 1000
+Wire Wire Line
+	6800 1000 6900 1000
+Wire Wire Line
+	6900 1000 6900 1450
+Connection ~ 6900 1450
+Wire Wire Line
+	6900 1450 8850 1450
+Text Notes 6050 700  0    50   ~ 0
+VCC SENSE
+$Comp
+L power:GND #PWR?
+U 1 1 609405D0
+P 7500 1550
+F 0 "#PWR?" H 7500 1300 50  0001 C CNN
+F 1 "GND" H 7505 1377 50  0000 C CNN
+F 2 "" H 7500 1550 50  0001 C CNN
+F 3 "" H 7500 1550 50  0001 C CNN
+	1    7500 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 1250 7500 1550
+Connection ~ 7500 1250
+Wire Wire Line
+	9050 2500 8800 2500
+Wire Wire Line
+	8800 2500 8800 1600
+Wire Wire Line
+	8800 1600 9000 1600
+Wire Wire Line
+	9000 650  9000 1600
+$EndSCHEMATC
