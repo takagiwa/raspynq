@@ -1,0 +1,121 @@
+
+(rules PCB raspynq
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (eu.mihosoft.freerouting.autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 2116)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.8)
+      (against_preferred_direction_trace_costs 3.0)
+    )
+    (layer_rule In1.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.9)
+    )
+    (layer_rule In2.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.2)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.8)
+      (against_preferred_direction_trace_costs 2.7)
+    )
+  )
+  (rule
+    (width 203.2)
+    (clear 203.4)
+    (clear 101.6 (type smd_to_turn_gap))
+    (clear 50.8 (type smd_smd))
+  )
+  (padstack "Via[0-3]_889:635_um"
+    (shape
+      (circle F.Cu 889.0 0.0 0.0)
+    )
+    (shape
+      (circle In1.Cu 889.0 0.0 0.0)
+    )
+    (shape
+      (circle In2.Cu 889.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 889.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-3]_889:635_um" "Via[0-3]_889:635_um" default
+  )
+  (via 
+    "Via[0-3]_889:635_um-kicad_default" "Via[0-3]_889:635_um" "kicad_default"
+  )
+  (via 
+    "Via[0-3]_889:635_um-Power" "Via[0-3]_889:635_um" Power
+  )
+  (via_rule
+    default "Via[0-3]_889:635_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-3]_889:635_um-kicad_default"
+  )
+  (via_rule
+    Power "Via[0-3]_889:635_um-Power"
+  )
+  (class default
+    "/ID_SD" "/ID_SC" /GPIO5 /GPIO6 /GPIO26 "/GPIO2(SDA1)" "/GPIO3(SCL1)" "/GPIO4(GCLK)"
+    "/GPIO14(TXD0)" "/GPIO15(RXD0)" "/GPIO17(GEN0)" "/GPIO27(GEN2)" "/GPIO22(GEN3)" "/GPIO23(GEN4)" "/GPIO24(GEN5)" "/GPIO25(GEN6)"
+    "/GPIO18(GEN1)(PWM0)" "/GPIO10(SPI0_MOSI)" "/GPIO9(SPI0_MISO)" "/GPIO11(SPI0_SCK)" "/GPIO8(SPI0_CE_N)" "/GPIO7(SPI1_CE_N)" "/GPIO12(PWM0)" "/GPIO13(PWM1)"
+    "/GPIO19(SPI1_MISO)" /GPIO16 "/GPIO20(SPI1_MOSI)" "/GPIO21(SPI1_SCK)" "Net-(IC14-Pad12)" "Net-(IC13-Pad10)" "Net-(IC14-Pad10)" "Net-(J3-Pad4)"
+    "Net-(C6-Pad2)" "Net-(IC2-Pad3)" "Net-(IC12-Pad4)" "Net-(D5-Pad2)" "Net-(IC13-Pad5)" "Net-(IC14-Pad5)" "Net-(IC13-Pad8)" "Net-(C2-Pad2)"
+    "Net-(IC1-Pad7)" "Net-(D1-Pad2)" "Net-(D2-Pad2)" "Net-(IC14-Pad8)" "Net-(IC3-Pad3)" "Net-(IC4-Pad3)" "Net-(IC5-Pad3)" "Net-(IC6-Pad3)"
+    "Net-(D3-Pad2)" "Net-(C3-Pad2)" "Net-(C4-Pad2)" "Net-(C5-Pad2)" "Net-(J3-Pad8)" "Net-(J3-Pad14)" "Net-(J3-Pad10)" "Net-(J3-Pad6)"
+    "Net-(IC13-Pad11)" "Net-(IC7-Pad2)" "Net-(IC9-Pad4)" "unconnected-(IC11-Pad6)" "unconnected-(IC11-Pad9)" "Net-(IC11-Pad10)" "Net-(IC11-Pad11)" "Net-(IC11-Pad12)"
+    "Net-(IC11-Pad13)" "unconnected-(IC10-Pad6)" "unconnected-(IC10-Pad9)" "Net-(IC10-Pad10)" "Net-(IC10-Pad11)" "Net-(IC10-Pad12)" "Net-(IC10-Pad13)" "unconnected-(IC14-Pad6)"
+    "unconnected-(IC14-Pad9)" "Net-(IC14-Pad11)" "Net-(IC14-Pad13)" "unconnected-(IC13-Pad6)" "unconnected-(IC13-Pad9)" "Net-(IC13-Pad12)" "Net-(IC13-Pad13)" "unconnected-(J3-Pad1)"
+    "unconnected-(J3-Pad12)" "Net-(IC13-Pad4)" "Net-(IC14-Pad4)"
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 203.2)
+    )
+    (circuit 
+      (use_layer F.Cu In1.Cu In2.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 203.2)
+    )
+    (circuit 
+      (use_layer F.Cu In1.Cu In2.Cu B.Cu)
+    )
+  )
+  (class Power
+    GND +3V3 +5V VCC "/raspynq_gpio/VIO" "/serial_interface/VUART" "/serial_interface/VI2C" "/raspynq_jtag/VCCSRC"
+    (clearance_class Power)
+    (via_rule Power)
+    (rule
+      (width 406.4)
+    )
+    (circuit 
+      (use_layer F.Cu In1.Cu In2.Cu B.Cu)
+    )
+  )
+)
